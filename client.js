@@ -8,7 +8,8 @@ const connect = function () {
     });
 
     conn.on('connect', () => {
-        console.log('connected')
+        console.log('Successfully connected to game server');
+        conn.write('Name: PLX')
     })
 
     conn.on('data', (data) => {
