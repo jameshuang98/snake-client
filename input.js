@@ -1,7 +1,4 @@
-w = "Move: up"
-a = "Move: left"
-s = "Move: down"
-d = "Move: right"
+const { w, a, s, d } = require('./constants')
 
 // Stores the active TCP connection object.
 let connection;
@@ -30,6 +27,8 @@ const handleUserInput = function(key) {
         connection.write(s)
     } else if (key === 'd') {
         connection.write(d)
+    } else if (key === 't') {
+        connection.write('Say: I win')
     }
 };
 
