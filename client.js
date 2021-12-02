@@ -22,7 +22,7 @@ const connect = function () {
     return conn;
 };
 
-connect();
+//connect();
 
 module.exports = {
     connect
